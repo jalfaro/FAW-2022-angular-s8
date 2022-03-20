@@ -1,0 +1,29 @@
+#elemento {
+    display:flex;
+    flex-direction: row;
+}
+
+#avatar {
+    width: 50px;
+    height: 50px;
+}
+#nombre {
+    width: 30%;
+    font-size: 32px;
+    color: red;
+}
+#telefono {
+    width: 30%;
+    font-size: 22px;
+    color: blue;
+}
+#editar {
+    width:30px;
+    height: 30px;
+    margin: 10px;
+}
+#eliminar {
+    width:30px;
+    height: 30px;
+    margin: 10px;
+}

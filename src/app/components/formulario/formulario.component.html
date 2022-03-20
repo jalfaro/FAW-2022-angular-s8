@@ -1,0 +1,20 @@
+<div class="fila">
+    <div class="etiqueta">Nombre</div>
+    <input type="text" [(ngModel)]="nombre">
+</div>
+<div class="fila">
+    <div class="etiqueta">Telefono</div>
+    <input type="number" [(ngModel)]="telefono">
+</div>
+<div class="fila">
+    <div class="etiqueta">Avatar</div>
+    <select [(ngModel)]="avatar">
+        <option value="https://www.disneypictures.net/data/media/14/Mickey_Mouse7.gif">Mickey Mouse</option>
+        <option value="https://www.disneypictures.net/data/media/17/Donald_Duck14.gif">Donald Duck</option>
+        <option value="https://modelsaber.com/files/avatar/1573189499/image.jpg">Goofy</option>
+    </select>
+</div>
+<button (click)="grabar()">Grabar Contacto</button>
+<div>
+   <app-listado (borrar)="borrar($event)" *ngFor="let contacto of arreglo" [nombre]="contacto.nombre" [telefono]="contacto.telefono" [avatar]="contacto.avatar"></app-listado>
+</div>
